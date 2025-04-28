@@ -7,7 +7,7 @@ import TabButton from './components/TabButton.jsx';
 import { CORE_CONCEPTS, EXAMPLES } from './data';
 
 const concepts = CORE_CONCEPTS.map((concept, index) => (
-  <CoreConcept key={index} {...CORE_CONCEPTS[index]} />
+  <CoreConcept key={concept.title + index} {...concept} />
 ));
 
 function App() {
